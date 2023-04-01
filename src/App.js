@@ -1,25 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import Texto from "./components/text/text.js";
+import Button from "./components/button/button.js"
+import './App.css'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <Texto color="white" transform="uppercase">
+        Este é o parágrafo colorido e maiúsculo da Quest de React básico do Curso DevQuest dos gêmeos Ricardo Dias (Cadu) e Roberto Dias (Beto) do devemdobro.
+      </Texto>
+      <Button label="Mostrar label"/>
     </div>
-  );
+  )
 }
 
 export default App;
